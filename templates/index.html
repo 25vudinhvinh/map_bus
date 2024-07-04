@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Thông tin xe bus Hà Nội</title>
+    <style>
+        /* Thêm CSS để định dạng giao diện */
+    </head>
+<body>
+    <h1>Thông tin xe bus Hà Nội</h1>
+    <ul>
+        {% for bus in buses %}
+            <li>
+                Tên xe: {{ bus.name }}<br>
+                Điểm đến: {{ bus.destination }}<br>
+                Thời gian: {{ bus.time }}
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
